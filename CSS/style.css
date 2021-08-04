@@ -1,0 +1,778 @@
+@charset "UTF-8";
+/*global*/
+* {
+  margin: 0px; }
+
+* {
+  padding: 0px; }
+
+* {
+  box-sizing: border-box; }
+
+* {
+  overflow-x: hidden; }
+
+* {
+  font-family: 'Varta';
+  font-style: normal; }
+
+/* VARIABLES */
+/* GRAL */
+a:link, a:visited, a:active {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+/* NAV */
+.navbar {
+  text-align: end; }
+  .navbar .nav-logo {
+    height: 64px;
+    margin-left: 15px; }
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  background-color: #FFD5D8; }
+  footer .footer-div-redes {
+    padding: 10px; }
+    footer .footer-div-redes h2 {
+      color: #CE3262;
+      font-size: 20px;
+      height: 30px; }
+    footer .footer-div-redes img {
+      height: 26px;
+      margin: 5px 10px; }
+  footer .footer-div-contacto p {
+    color: #CE3262;
+    margin: 10px; }
+  footer .footer-div-wapp img {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 70px;
+    width: 70px; }
+
+/* INICIO */
+.home-main-section {
+  height: 270px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/IMG/cosmetologist-cleaning-face-woman-beauty-salon_edited.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  .home-main-section .home-main-section-txt {
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center; }
+
+.home-main-section2 {
+  height: 280px;
+  background-color: #FFD5D8; }
+  .home-main-section2 .home-main-div-nosotras {
+    height: 90px;
+    color: #CE3262;
+    padding-top: 20px;
+    padding-left: 20px; }
+    .home-main-section2 .home-main-div-nosotras p {
+      font-size: 15px;
+      margin-bottom: 1px; }
+    .home-main-section2 .home-main-div-nosotras h4 {
+      font-weight: 300;
+      color: #A5323C;
+      margin-bottom: 1px;
+      height: 40px; }
+  .home-main-section2 .home-main-div-parrafo {
+    height: 180px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #CE3262;
+    text-align: left;
+    margin: 1px 20px; }
+  .home-main-section2 .home-main-div-foto {
+    display: none; }
+
+.home-main-section3 {
+  background-color: #CE3262;
+  margin: 20px;
+  color: white;
+  text-align: center;
+  height: 154px;
+  padding: 20px; }
+  .home-main-section3 h3 {
+    font-size: 18px;
+    height: 50px; }
+  .home-main-section3 button {
+    color: #CE3262;
+    font-size: 15px;
+    height: 29px;
+    width: 159px;
+    text-align: center;
+    padding-top: 4px;
+    margin-top: 10px; }
+
+.home-main-section4 {
+  text-align: center;
+  color: #CE3262;
+  margin: 20px; }
+  .home-main-section4 h3 {
+    height: 40px; }
+
+/* TRATAMIENTOS */
+.tratam-main-section {
+  height: 270px;
+  width: 100%;
+  background-image: url("/IMG/attractive-woman-getting-face-beauty-procedures-in-spa-salon.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .tratam-main-section .tratam-main-section-txt {
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center; }
+
+.tratam-main-section2 {
+  background-color: white;
+  color: #CE3262;
+  text-align: center;
+  height: 154px;
+  padding: 30px; }
+  .tratam-main-section2 h3 {
+    font-size: 18px;
+    height: 50px; }
+  .tratam-main-section2 button {
+    background-color: #CE3262;
+    color: white;
+    font-size: 15px;
+    height: 29px;
+    width: 159px;
+    text-align: center;
+    padding-top: 4px;
+    margin-top: 5px; }
+
+.tratam-main-section3 .tratam-main-div-facial {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  padding: 20px;
+  margin: 15px 15px; }
+  .tratam-main-section3 .tratam-main-div-facial h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px; }
+  .tratam-main-section3 .tratam-main-div-facial ul {
+    color: #A5323C;
+    font-size: 12px; }
+  .tratam-main-section3 .tratam-main-div-facial img {
+    height: 100%;
+    width: 100%; }
+
+.tratam-main-section3 .tratam-main-div-pestañas {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  padding: 20px;
+  margin: 15px 15px; }
+  .tratam-main-section3 .tratam-main-div-pestañas h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px; }
+  .tratam-main-section3 .tratam-main-div-pestañas ul {
+    color: #A5323C;
+    font-size: 12px; }
+  .tratam-main-section3 .tratam-main-div-pestañas img {
+    height: 100%;
+    width: 100%; }
+
+.tratam-main-section3 .tratam-main-div-cejas {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 15px;
+  padding: 20px; }
+  .tratam-main-section3 .tratam-main-div-cejas h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px; }
+  .tratam-main-section3 .tratam-main-div-cejas ul {
+    color: #A5323C;
+    font-size: 12px; }
+  .tratam-main-section3 .tratam-main-div-cejas img {
+    height: 100%;
+    width: 100%; }
+
+.tratam-main-section3 .tratam-main-div-uñas {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 15px;
+  padding: 20px; }
+  .tratam-main-section3 .tratam-main-div-uñas h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px; }
+  .tratam-main-section3 .tratam-main-div-uñas ul {
+    color: #A5323C;
+    font-size: 12px; }
+  .tratam-main-section3 .tratam-main-div-uñas img {
+    height: 100%;
+    width: 100%; }
+
+.tratam-main-section3 .tratam-main-div-corporal {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 15px;
+  padding: 20px; }
+  .tratam-main-section3 .tratam-main-div-corporal h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px; }
+  .tratam-main-section3 .tratam-main-div-corporal ul {
+    color: #A5323C;
+    font-size: 12px; }
+  .tratam-main-section3 .tratam-main-div-corporal img {
+    height: 100%;
+    width: 100%; }
+
+.tratam-main-section3 .tratam-main-div-belleza {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  padding: 20px;
+  margin: 15px 15px; }
+  .tratam-main-section3 .tratam-main-div-belleza h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px; }
+  .tratam-main-section3 .tratam-main-div-belleza ul {
+    color: #A5323C;
+    font-size: 12px; }
+  .tratam-main-section3 .tratam-main-div-belleza img {
+    height: 100%;
+    width: 100%; }
+
+.button {
+  text-align: center;
+  margin: 20px; }
+  .button .btn-sm {
+    background-color: #CE3262;
+    color: white;
+    border-color: #CE3262; }
+
+/* INFORMACION */
+.info-main-section {
+  background-color: white;
+  color: #CE3262;
+  text-align: center;
+  height: 180px;
+  padding: 20px; }
+  .info-main-section h3 {
+    padding: 5px; }
+  .info-main-section h4 {
+    font-size: 18px;
+    height: 50px; }
+  .info-main-section button {
+    background-color: #CE3262;
+    color: white;
+    font-size: 15px;
+    height: 29px;
+    width: 159px;
+    text-align: center;
+    padding-top: 4px; }
+
+.info-main-section2 .info-main-div-volruso {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 20px; }
+  .info-main-section2 .info-main-div-volruso h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold; }
+  .info-main-section2 .info-main-div-volruso p {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-volruso img {
+    height: 100%;
+    width: 100%; }
+
+.info-main-section2 .info-main-div-pxp {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 20px; }
+  .info-main-section2 .info-main-div-pxp h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold; }
+  .info-main-section2 .info-main-div-pxp p {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-pxp img {
+    height: 100%;
+    width: 100%; }
+
+.info-main-section2 .info-main-div-maqui {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 20px; }
+  .info-main-section2 .info-main-div-maqui h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold; }
+  .info-main-section2 .info-main-div-maqui ul {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-maqui p {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-maqui img {
+    height: 100%;
+    width: 100%; }
+
+.info-main-section2 .info-main-div-powder {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 20px; }
+  .info-main-section2 .info-main-div-powder h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold; }
+  .info-main-section2 .info-main-div-powder p {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-powder img {
+    height: 100%;
+    width: 100%; }
+
+.info-main-section2 .info-main-div-perfil {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 20px; }
+  .info-main-section2 .info-main-div-perfil h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold; }
+  .info-main-section2 .info-main-div-perfil p {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-perfil img {
+    height: 100%;
+    width: 100%; }
+
+.info-main-section2 .info-main-div-depi {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 20px; }
+  .info-main-section2 .info-main-div-depi h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold; }
+  .info-main-section2 .info-main-div-depi p {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-depi img {
+    height: 100%;
+    width: 100%; }
+
+.info-main-section2 .info-main-div-limp {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 20px; }
+  .info-main-section2 .info-main-div-limp h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold; }
+  .info-main-section2 .info-main-div-limp ul {
+    font-size: 13px; }
+  .info-main-section2 .info-main-div-limp p {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-limp img {
+    height: 100%;
+    width: 100%; }
+
+.info-main-section2 .info-main-div-derma {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 20px; }
+  .info-main-section2 .info-main-div-derma h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold; }
+  .info-main-section2 .info-main-div-derma p {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-derma img {
+    height: 100%;
+    width: 100%; }
+
+.info-main-section2 .info-main-div-dermapen {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 20px; }
+  .info-main-section2 .info-main-div-dermapen h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold; }
+  .info-main-section2 .info-main-div-dermapen p {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-dermapen img {
+    height: 100%;
+    width: 100%; }
+
+.info-main-section2 .info-main-div-prof {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 20px; }
+  .info-main-section2 .info-main-div-prof h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold; }
+  .info-main-section2 .info-main-div-prof p {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-prof img {
+    height: 100%;
+    width: 100%; }
+
+.info-main-section2 .info-main-div-micro {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 20px; }
+  .info-main-section2 .info-main-div-micro h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold; }
+  .info-main-section2 .info-main-div-micro p {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-micro img {
+    height: 100%;
+    width: 100%; }
+
+.info-main-section2 .info-main-div-lifting {
+  color: #CE3262;
+  background-color: #FFD5D8;
+  text-align: center;
+  margin: 15px 0px;
+  padding: 20px; }
+  .info-main-section2 .info-main-div-lifting h4 {
+    font-size: 20px;
+    color: #A5323C;
+    height: 30px;
+    margin-top: 15px;
+    font-weight: bold; }
+  .info-main-section2 .info-main-div-lifting p {
+    font-size: 15px; }
+  .info-main-section2 .info-main-div-lifting img {
+    height: 100%;
+    width: 100%; }
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  /* INICIO */
+  .home-main-section-txt {
+    width: 50%; }
+  .home-main-section2 {
+    position: relative; }
+    .home-main-section2 .home-main-div-nosotras {
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      text-align: center; }
+    .home-main-section2 .home-main-div-parrafo {
+      height: 220px;
+      width: 40%;
+      position: absolute;
+      top: 40px;
+      right: 50px;
+      text-align: left; }
+    .home-main-section2 .home-main-div-foto {
+      display: block;
+      position: absolute;
+      top: 100px;
+      left: 90px; }
+      .home-main-section2 .home-main-div-foto img {
+        border-radius: 200px;
+        height: 150px; }
+  /* TRATAMIENTOS */
+  .tratam-main-section-txt {
+    background: rgba(206, 50, 98, 0.7);
+    font-weight: 400;
+    font-size: 30px;
+    width: 200px;
+    height: 40px;
+    padding-top: 3px; }
+  .tratam-main-section3 .tratam-main-div-facial {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center; }
+    .tratam-main-section3 .tratam-main-div-facial .texto {
+      align-content: flex-start;
+      text-align: left; }
+    .tratam-main-section3 .tratam-main-div-facial .imagen {
+      height: 50%;
+      width: 50%; }
+  .tratam-main-section3 .tratam-main-div-pestañas {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center; }
+    .tratam-main-section3 .tratam-main-div-pestañas .texto {
+      align-content: flex-start;
+      text-align: left; }
+    .tratam-main-section3 .tratam-main-div-pestañas .imagen {
+      height: 50%;
+      width: 50%; }
+  .tratam-main-section3 .tratam-main-div-cejas {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center; }
+    .tratam-main-section3 .tratam-main-div-cejas .texto {
+      align-content: flex-start;
+      text-align: left; }
+    .tratam-main-section3 .tratam-main-div-cejas .imagen {
+      height: 50%;
+      width: 50%; }
+  .tratam-main-section3 .tratam-main-div-uñas {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center; }
+    .tratam-main-section3 .tratam-main-div-uñas .texto {
+      align-content: flex-start;
+      text-align: left; }
+    .tratam-main-section3 .tratam-main-div-uñas .imagen {
+      height: 50%;
+      width: 50%; }
+  .tratam-main-section3 .tratam-main-div-corporal {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center; }
+    .tratam-main-section3 .tratam-main-div-corporal .texto {
+      align-content: flex-start;
+      text-align: left; }
+    .tratam-main-section3 .tratam-main-div-corporal .imagen {
+      height: 50%;
+      width: 50%; }
+  .tratam-main-section3 .tratam-main-div-belleza {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center; }
+    .tratam-main-section3 .tratam-main-div-belleza .texto {
+      align-content: flex-start;
+      text-align: left; }
+    .tratam-main-section3 .tratam-main-div-belleza .imagen {
+      height: 50%;
+      width: 50%; }
+  /* INFORMACION */
+  .info-main-section {
+    background-color: #FFD5D8; }
+  .info-main-section2 .info-main-div-volruso {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; }
+    .info-main-section2 .info-main-div-volruso .parrafo {
+      align-content: flex-start;
+      text-align: center;
+      width: 50%; }
+    .info-main-section2 .info-main-div-volruso .img {
+      height: 40%;
+      width: 40%; }
+  .info-main-section2 .info-main-div-pxp {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; }
+    .info-main-section2 .info-main-div-pxp .parrafo {
+      align-content: flex-start;
+      text-align: center;
+      width: 50%; }
+    .info-main-section2 .info-main-div-pxp .img {
+      height: 40%;
+      width: 40%; }
+  .info-main-section2 .info-main-div-maqui {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; }
+    .info-main-section2 .info-main-div-maqui .parrafo {
+      align-content: flex-start;
+      text-align: center;
+      width: 50%; }
+    .info-main-section2 .info-main-div-maqui .img {
+      height: 40%;
+      width: 40%; }
+  .info-main-section2 .info-main-div-powder {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; }
+    .info-main-section2 .info-main-div-powder .parrafo {
+      align-content: flex-start;
+      text-align: center;
+      width: 50%; }
+    .info-main-section2 .info-main-div-powder .img {
+      height: 40%;
+      width: 40%; }
+  .info-main-section2 .info-main-div-perfil {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; }
+    .info-main-section2 .info-main-div-perfil .parrafo {
+      align-content: flex-start;
+      text-align: center;
+      width: 50%; }
+    .info-main-section2 .info-main-div-perfil .img {
+      height: 40%;
+      width: 40%; }
+  .info-main-section2 .info-main-div-depi {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; }
+    .info-main-section2 .info-main-div-depi .parrafo {
+      align-content: flex-start;
+      text-align: center;
+      width: 50%; }
+    .info-main-section2 .info-main-div-depi .img {
+      height: 40%;
+      width: 40%; }
+  .info-main-section2 .info-main-div-limp {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; }
+    .info-main-section2 .info-main-div-limp .parrafo {
+      align-content: flex-start;
+      text-align: center;
+      width: 50%; }
+    .info-main-section2 .info-main-div-limp .img {
+      height: 40%;
+      width: 40%; }
+  .info-main-section2 .info-main-div-derma {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; }
+    .info-main-section2 .info-main-div-derma .parrafo {
+      align-content: flex-start;
+      text-align: center;
+      width: 50%; }
+    .info-main-section2 .info-main-div-derma .img {
+      height: 40%;
+      width: 40%; }
+  .info-main-section2 .info-main-div-dermapen {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; }
+    .info-main-section2 .info-main-div-dermapen .parrafo {
+      align-content: flex-start;
+      text-align: center;
+      width: 50%; }
+    .info-main-section2 .info-main-div-dermapen .img {
+      height: 40%;
+      width: 40%; }
+  .info-main-section2 .info-main-div-prof {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; }
+    .info-main-section2 .info-main-div-prof .parrafo {
+      align-content: flex-start;
+      text-align: center;
+      width: 50%; }
+    .info-main-section2 .info-main-div-prof .img {
+      height: 40%;
+      width: 40%; }
+  .info-main-section2 .info-main-div-micro {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; }
+    .info-main-section2 .info-main-div-micro .parrafo {
+      align-content: flex-start;
+      text-align: center;
+      width: 50%; }
+    .info-main-section2 .info-main-div-micro .img {
+      height: 40%;
+      width: 40%; }
+  .info-main-section2 .info-main-div-lifting {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px; }
+    .info-main-section2 .info-main-div-lifting .parrafo {
+      align-content: flex-start;
+      text-align: center;
+      width: 50%; }
+    .info-main-section2 .info-main-div-lifting .img {
+      height: 40%;
+      width: 40%; } }
