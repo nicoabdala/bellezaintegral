@@ -5,12 +5,14 @@
 * {overflow-x : hidden}
 * { font-family: 'Varta';
     font-style: normal;}
-    
+
 /* VARIABLES */ 
 
 $colorPrincipal: #FFD5D8;
 $colorSecundario: #CE3262;
 $colorTitulo: #A5323C;
+$colorCards: #F18DA5;
+
 
 /* GRAL */ 
 
@@ -20,6 +22,11 @@ a:link, a:visited, a:active{
 
 ul{
     list-style: none;
+}
+
+button:hover{
+    background-color: $colorSecundario;
+    color: $colorPrincipal;
 }
 
 /* NAV */ 
@@ -79,27 +86,29 @@ footer{
 /* INICIO */ 
 
 .home-main-section{
-    height: 270px;
+    height: 300px;
     width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/IMG/cosmetologist-cleaning-face-woman-beauty-salon_edited.jpg");
+    background-image: url("/IMG/cosmetologist-cleaning-face-woman-beauty-salon.jpg");
     background-repeat: no-repeat;
     background-position: center center;
 	background-size: cover;
 
     .home-main-section-txt{
-        color: white;
-        font-weight: 400;
+        font-style: normal;
+        font-weight: normal;
         font-size: 25px;
+        line-height: 36px;
         text-align: center;
+        color: rgba(255, 255, 255, 0.85);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 }
 
 .home-main-section2{
-    height: 280px;
     background-color: $colorPrincipal;
 
     .home-main-div-nosotras{
@@ -109,29 +118,30 @@ footer{
         padding-left: 20px;
 
         p{
-            font-size: 15px;
-            margin-bottom: 1px;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 17px;
+            margin-bottom: 0px;
         }
 
         h4{
-            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
             color: $colorTitulo;
-            margin-bottom: 1px;
-            height: 40px;
+            margin-bottom: 0px;
+        }
+
+        img{
+            display: none;
         }
     }
     
     .home-main-div-parrafo{
-        height: 180px;
-        font-size: 14px;
-        line-height: 20px;
         color: $colorSecundario;
         text-align: left;
         margin: 1px 20px;
-    }
-
-    .home-main-div-foto{
-        display: none;
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
@@ -149,6 +159,7 @@ footer{
     }
 
     button{
+        background-color: $colorPrincipal;
         color: $colorSecundario;
         font-size: 15px;
         height: 29px;
@@ -169,6 +180,10 @@ footer{
     }
 }
 
+.home-main-section5{
+    display: none;
+}
+
 /* TRATAMIENTOS */ 
 
 .tratam-main-section{
@@ -184,10 +199,11 @@ footer{
     align-items: center;
 
     .tratam-main-section-txt{
-        color: white;
-        font-weight: 400;
         font-size: 25px;
+        line-height: 36px;
         text-align: center;
+        color: rgba(255, 255, 255, 0.85);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 }
 
@@ -217,147 +233,30 @@ footer{
 
 .tratam-main-section3{
 
-    .tratam-main-div-facial{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
+    .tratam-main-section3-div{
+        color: white;
+        background-color: $colorCards;
         text-align: center;
-        padding: 20px;
         margin: 15px 15px;
+        padding: 30px;
 
         h4{
             font-size: 20px;
-            color: $colorTitulo;
             height: 30px;
         }
 
         ul{
-            color: $colorTitulo;
-            font-size: 12px;
-        }
-
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .tratam-main-div-pestañas{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        padding: 20px;
-        margin: 15px 15px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-        }
-
-        ul{
-            color: $colorTitulo;
             font-size: 12px;
         }
         
-        img{
-            height: 100%;
+        .imagen{
+            height: 50%;
             width: 100%;
-        }
-    }
 
-    .tratam-main-div-cejas{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 15px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-        }
-
-        ul{
-            color: $colorTitulo;
-            font-size: 12px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .tratam-main-div-uñas{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 15px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-        }
-
-        ul{
-            color: $colorTitulo;
-            font-size: 12px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .tratam-main-div-corporal{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 15px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-        }
-
-        ul{
-            color: $colorTitulo;
-            font-size: 12px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .tratam-main-div-belleza{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        padding: 20px;
-        margin: 15px 15px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-        }
-
-        ul{
-            color: $colorTitulo;
-            font-size: 12px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
+            img{
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 }
@@ -405,469 +304,233 @@ footer{
 
 .info-main-section2{
 
-    .info-main-div-volruso{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
+    .info-main-section2-cards{
+        color: white;
+        background-color: $colorCards;
         text-align: center;
-        margin: 15px 0px;
-        padding: 20px;
+        margin: 15px 15px;
+        padding: 30px;
 
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        p{
+        .parrafo{
             font-size: 15px;
+
+            h4{
+                font-size: 20px;
+                height: 30px;
+                margin-top: 15px;
+                font-weight: bold;
+            }
         }
-        
-        img{
-            height: 100%;
+
+        .img{
+            height: 50%;
             width: 100%;
-        }
-    }
 
-    .info-main-div-pxp{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 0px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        p{
-            font-size: 15px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .info-main-div-maqui{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 0px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        ul{
-            font-size: 15px;
-        }
-
-        p{
-            font-size: 15px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .info-main-div-powder{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 0px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        p{
-            font-size: 15px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .info-main-div-perfil{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 0px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        p{
-            font-size: 15px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .info-main-div-depi{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 0px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        p{
-            font-size: 15px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .info-main-div-limp{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 0px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        ul{
-            font-size: 13px;
-        }
-
-        p{
-            font-size: 15px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .info-main-div-derma{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 0px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        p{
-            font-size: 15px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .info-main-div-dermapen{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 0px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        p{
-            font-size: 15px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .info-main-div-prof{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 0px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        p{
-            font-size: 15px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .info-main-div-micro{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 0px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        p{
-            font-size: 15px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-    .info-main-div-lifting{
-        color: $colorSecundario;
-        background-color: $colorPrincipal;
-        text-align: center;
-        margin: 15px 0px;
-        padding: 20px;
-
-        h4{
-            font-size: 20px;
-            color: $colorTitulo;
-            height: 30px;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-
-        p{
-            font-size: 15px;
-        }
-        
-        img{
-            height: 100%;
-            width: 100%;
+            img{
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 }
 
 /* MEDIA QUERIES */ 
 
-@media only screen and (min-width: 601px) and (max-width: 900px){
+@media only screen and (min-width: 900px){
 
-/* INICIO */ 
+    .navbar{
+        
+        .nav-logo{
+            height: 112px;
+        }
+    }
 
-    .home-main-section-txt{
-        width: 50%;
+    button:hover{
+        background-color: $colorSecundario;
+        color: $colorPrincipal;
+    }
+
+    /* INICIO */ 
+
+    .home-main-section{
+        height: 520px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/IMG/cosmetologist-cleaning-face-woman-beauty-salon.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    
+        .home-main-section-txt{
+            width: 50%;
+            font-size: 40px;
+            line-height: 58px;
+        }
     }
 
     .home-main-section2{
-        position: relative;
+        height: 364px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
         .home-main-div-nosotras{
-            position: absolute;
-            top: 10px;
-            left: 50px;
             text-align: center;
+            height: 250px;
+            margin-right: 50px;
+
+            img{
+                display: block;
+                border-radius: 200px;
+                height: 150px;
+                margin-top: 5px;
+            }
         }
         
         .home-main-div-parrafo{
-            height: 220px;
-            width: 40%;
-            position: absolute;
-            top: 40px;
-            right: 50px;
-            text-align: left;
+            width: 404px;
+            height: 230px;
+            font-size: 18px;
+            line-height: 26px;
+            margin-left: 50px;
+        }
+    }
+
+    .home-main-section3{
+        background-color: $colorSecundario;
+        margin: 0px;
+        color: white;
+        text-align: center;
+        height: 154px;
+        padding: 20px;
+    
+        h3{
+            font-size: 18px;
+            height: 50px;
         }
     
-        .home-main-div-foto{
-            display: block;
-            position: absolute;
-            top: 100px;
-            left: 90px;
+        button{
+            background-color: $colorPrincipal;
+            color: $colorSecundario;
+            font-size: 25px;
+            height: 38px;
+            width: 224px;
+            text-align: center;
+            padding-top: 1px;
+            margin-top: 10px;
+        }
+    }
 
+    .home-main-section5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        margin-top: 50px;
+        
+        div{
+            width: 1209px;
+            height: 278px;
+            
             img{
-                border-radius: 200px;
-                height: 150px;
+                width: 100%;
+                height: 100%;
             }
         }
+        
     }
 
 /* TRATAMIENTOS */ 
 
-    .tratam-main-section-txt{
-        background: rgba($color: #CE3262, $alpha: 0.7);
-        font-weight: 400;
-        font-size: 30px;
-        width: 200px;
-        height: 40px;
-        padding-top: 3px;
+    .tratam-main-section{
+        height: 520px;
+
+        .tratam-main-section-txt{
+            background: rgba($color: #CE3262, $alpha: 0.7);
+            font-weight: 400;
+            font-size: 40px;
+            width: 564px;
+            height: 170px;
+            padding-top: 60px;
+            }
+    }
+
+    .tratam-main-section2{
+        background-color: white;
+        color: $colorSecundario;
+        height: 200px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        h3{
+            font-size: 25px;
+            line-height: 20px;
+            padding-top: 10px;
+        }
+    
+        button{
+            background-color: $colorSecundario;
+            color: white;
+            font-size: 25px;
+            line-height: 29px;            
+            width: 224px;
+            height: 38px;
+            text-align: center;
+            padding-top: 5px;
+            margin-top: 5px;
+        }
     }
 
     .tratam-main-section3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        .tratam-main-div-facial{
+        .tratam-main-section3-div{
+            color: white;
+            background-color: $colorCards;
+            width: 900px;
+            height: 350px;
+            text-align: center;
+            padding: 20px;
+            margin: 15px 15px;
             display: flex;
-            flex-flow: row nowrap;
             justify-content: space-around;
             align-items: center;
 
-            .texto{
-                align-content: flex-start;
+            h4{
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 36px;
                 text-align: left;
             }
-
-            .imagen{
-                height: 50%;
-                width: 50%;
-            }
-        }
     
-        .tratam-main-div-pestañas{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            align-items: center;
-
-            .texto{
-                align-content: flex-start;
+            ul{
+                font-size: 18px;
+                line-height: 20px;
                 text-align: left;
+
+                li{
+                    padding: 2px;
+                }
             }
 
             .imagen{
-                height: 50%;
-                width: 50%;
-            }
-        }
-    
-        .tratam-main-div-cejas{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            align-items: center;
+                width: 60%;
+                height: 100%;
 
-            .texto{
-                align-content: flex-start;
-                text-align: left;
-            }
-
-            .imagen{
-                height: 50%;
-                width: 50%;
-            }
-        }
-    
-        .tratam-main-div-uñas{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            align-items: center;
-
-            .texto{
-                align-content: flex-start;
-                text-align: left;
-            }
-
-            .imagen{
-                height: 50%;
-                width: 50%;
-            }
-        }
-    
-        .tratam-main-div-corporal{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            align-items: center;
-
-            .texto{
-                align-content: flex-start;
-                text-align: left;
-            }
-
-            .imagen{
-                height: 50%;
-                width: 50%;
-            }
-        }
-    
-        .tratam-main-div-belleza{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            align-items: center;
-
-            .texto{
-                align-content: flex-start;
-                text-align: left;
-            }
-
-            .imagen{
-                height: 50%;
-                width: 50%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
@@ -879,237 +542,47 @@ footer{
     }
     
     .info-main-section2{
-    
-        .info-main-div-volruso{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 50px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: stretch;
 
-            .parrafo{
-                align-content: flex-start;
-                text-align: center;
-                width: 50%;
+        .info-main-section2-cards{
+            color: white;
+            background-color: $colorCards;
+            text-align: center;
+            margin: 15px 2px;
+            padding: 0px;
+            width: 30%;
+
+            h4{
+                font-size: 25px;
+                line-height: 36px;
+                height: 30px;
+                margin-top: 15px;
+                font-weight: bold;
             }
-
+    
+            ul{
+                font-size: 14px;
+            }
+    
+            p{
+                font-size: 14px;
+                line-height: 20px;
+                padding: 0px 40px;
+                text-align: left;
+            }
+            
             .img{
                 height: 40%;
-                width: 40%;
-            }
-        }
-    
-        .info-main-div-pxp{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 50px;
-
-            .parrafo{
-                align-content: flex-start;
-                text-align: center;
-                width: 50%;
-            }
-
-            .img{
-                height: 40%;
-                width: 40%;
-            }
-        }
-    
-        .info-main-div-maqui{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 50px;
-
-            .parrafo{
-                align-content: flex-start;
-                text-align: center;
-                width: 50%;
-            }
-
-            .img{
-                height: 40%;
-                width: 40%;
-            }
-        }
-    
-        .info-main-div-powder{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 50px;
-
-            .parrafo{
-                align-content: flex-start;
-                text-align: center;
-                width: 50%;
-            }
-
-            .img{
-                height: 40%;
-                width: 40%;
-            }
-        }
-    
-        .info-main-div-perfil{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 50px;
-
-            .parrafo{
-                align-content: flex-start;
-                text-align: center;
-                width: 50%;
-            }
-
-            .img{
-                height: 40%;
-                width: 40%;
-            }
-        }
-    
-        .info-main-div-depi{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 50px;
-
-            .parrafo{
-                align-content: flex-start;
-                text-align: center;
-                width: 50%;
-            }
-
-            .img{
-                height: 40%;
-                width: 40%;
-            }
-        }
-    
-        .info-main-div-limp{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 50px;
-
-            .parrafo{
-                align-content: flex-start;
-                text-align: center;
-                width: 50%;
-            }
-
-            .img{
-                height: 40%;
-                width: 40%;
-            }
-        }
-    
-        .info-main-div-derma{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 50px;
-
-            .parrafo{
-                align-content: flex-start;
-                text-align: center;
-                width: 50%;
-            }
-
-            .img{
-                height: 40%;
-                width: 40%;
-            }
-        }
-    
-        .info-main-div-dermapen{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 50px;
-
-            .parrafo{
-                align-content: flex-start;
-                text-align: center;
-                width: 50%;
-            }
-
-            .img{
-                height: 40%;
-                width: 40%;
-            }
-        }
-    
-        .info-main-div-prof{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 50px;
-
-            .parrafo{
-                align-content: flex-start;
-                text-align: center;
-                width: 50%;
-            }
-
-            .img{
-                height: 40%;
-                width: 40%;
-            }
-        }
-    
-        .info-main-div-micro{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 50px;
-
-            .parrafo{
-                align-content: flex-start;
-                text-align: center;
-                width: 50%;
-            }
-
-            .img{
-                height: 40%;
-                width: 40%;
-            }
-        }
-    
-        .info-main-div-lifting{
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 50px;
-
-            .parrafo{
-                align-content: flex-start;
-                text-align: center;
-                width: 50%;
-            }
-
-            .img{
-                height: 40%;
-                width: 40%;
+                width: 100%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
             }
         }
     }
-}
-
-@media only screen and (min-width: 901px){
 
 }
