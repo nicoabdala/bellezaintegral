@@ -24,15 +24,10 @@ ul{
     list-style: none;
 }
 
-button:hover{
-    background-color: $colorSecundario;
-    color: $colorPrincipal;
-}
-
 /* NAV */ 
 
 .navbar{
-    text-align: end;
+    text-align: end;  
 
     .nav-logo{
         height: 64px;
@@ -47,7 +42,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 200px;
     background-color: $colorPrincipal ;
 
     .footer-div-redes {
@@ -72,6 +66,10 @@ footer{
         }
     }
 
+    .footer-div-mapa{
+        display: none;
+    }
+
     .footer-div-wapp{
         img{
             position: fixed;
@@ -92,7 +90,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/IMG/cosmetologist-cleaning-face-woman-beauty-salon.jpg");
+    background-image: url("IMG/cosmetologist-cleaning-face-woman-beauty-salon.jpg");
     background-repeat: no-repeat;
     background-position: center center;
 	background-size: cover;
@@ -170,16 +168,6 @@ footer{
     }
 }
 
-.home-main-section4{
-    text-align: center;
-    color: $colorSecundario;
-    margin: 20px;
-
-    h3{
-        height: 40px;
-    }
-}
-
 .home-main-section5{
     display: none;
 }
@@ -189,7 +177,7 @@ footer{
 .tratam-main-section{
     height: 270px;
     width: 100%;
-    background-image: url("/IMG/attractive-woman-getting-face-beauty-procedures-in-spa-salon.jpg");
+    background-image: url("IMG/attractive-woman-getting-face-beauty-procedures-in-spa-salon.jpg");
     background-repeat: no-repeat;
     background-position: center center;
 	background-size: cover;
@@ -313,12 +301,18 @@ footer{
 
         .parrafo{
             font-size: 15px;
+            margin-top: 10px;
 
             h4{
                 font-size: 20px;
                 height: 30px;
-                margin-top: 15px;
                 font-weight: bold;
+            }
+
+            ul{
+                li{
+                    text-align: center;
+                }
             }
         }
 
@@ -345,9 +339,24 @@ footer{
         }
     }
 
-    button:hover{
-        background-color: $colorSecundario;
-        color: $colorPrincipal;
+    footer{
+        
+        .footer-div-mapa{
+            display: block;
+            text-align: center;
+            background-color: white;
+    
+            h3{
+                height: 40px;
+                color: $colorTitulo;
+                margin-top: 20px;
+            }
+    
+            iframe{
+                width: 856px;
+                height: 392px;
+            }
+        }
     }
 
     /* INICIO */ 
@@ -455,7 +464,7 @@ footer{
             font-size: 40px;
             width: 564px;
             height: 170px;
-            padding-top: 60px;
+            padding-top: 65px;
             }
     }
 
@@ -497,39 +506,43 @@ footer{
         .tratam-main-section3-div{
             color: white;
             background-color: $colorCards;
-            width: 900px;
-            height: 350px;
-            text-align: center;
-            padding: 20px;
+            width: 856px;
+            height: 292px;
+            padding: 5px;
             margin: 15px 15px;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-            h4{
-                font-weight: bold;
-                font-size: 25px;
-                line-height: 36px;
+            .texto{
+                width: 300px;
                 text-align: left;
-            }
+
+                h4{
+                    font-weight: bold;
+                    font-size: 23px;
+                }
+        
+                ul{
+                    font-size: 16px;
+                    line-height: 20px;
     
-            ul{
-                font-size: 18px;
-                line-height: 20px;
-                text-align: left;
-
-                li{
-                    padding: 2px;
+                    li{
+                        padding: 2px;
+                    }
                 }
             }
 
             .imagen{
-                width: 60%;
+                width: 50%;
                 height: 100%;
 
                 img{
-                    width: 100%;
-                    height: 100%;
+                    width: 366px;
+                    height: 259px;
+                    padding-top: 20px;
+                    text-align: end;
                 }
             }
         }
@@ -539,43 +552,71 @@ footer{
 
     .info-main-section{
         background-color: $colorPrincipal;
+        color: $colorSecundario;
+        text-align: center;
+        height: 180px;
+        padding: 20px;
+
+        h3{
+            padding: 0px;
+        }
+
+        h4{
+            font-size: 18px;
+            height: 50px;
+        }
+
+        button{
+            background-color: $colorSecundario;
+            color: white;
+            font-size: 25px;
+            width: 224px;
+            height: 38px;
+        }
     }
     
     .info-main-section2{
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: stretch;
 
         .info-main-section2-cards{
             color: white;
             background-color: $colorCards;
             text-align: center;
-            margin: 15px 2px;
+            margin: 15px 15px;
             padding: 0px;
-            width: 30%;
+            width: 28%;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-            h4{
-                font-size: 25px;
-                line-height: 36px;
-                height: 30px;
-                margin-top: 15px;
-                font-weight: bold;
-            }
-    
-            ul{
+
+            .parrafo{
                 font-size: 14px;
-            }
-    
-            p{
-                font-size: 14px;
-                line-height: 20px;
-                padding: 0px 40px;
-                text-align: left;
+
+                h4{
+                    font-size: 25px;
+                    height: 35px;
+                }
+        
+                p{
+                    line-height: 20px;
+                    padding: 0px 40px;
+                    text-align: left;
+                }
+
+                ul{
+                    padding: 0px 60px;
+
+                    li{
+                        text-align: left;
+                        text-decoration: dotted;
+                    }                    
+                }
             }
             
             .img{
-                height: 40%;
+                height: 45%;
                 width: 100%;
                 img{
                     height: 100%;

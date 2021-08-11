@@ -23,10 +23,6 @@ a:link, a:visited, a:active {
 ul {
   list-style: none; }
 
-button:hover {
-  background-color: #CE3262;
-  color: #FFD5D8; }
-
 /* NAV */
 .navbar {
   text-align: end; }
@@ -40,7 +36,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: 200px;
   background-color: #FFD5D8; }
   footer .footer-div-redes {
     padding: 10px; }
@@ -54,6 +49,8 @@ footer {
   footer .footer-div-contacto p {
     color: #CE3262;
     margin: 10px; }
+  footer .footer-div-mapa {
+    display: none; }
   footer .footer-div-wapp img {
     position: fixed;
     bottom: 20px;
@@ -69,7 +66,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/IMG/cosmetologist-cleaning-face-woman-beauty-salon.jpg");
+  background-image: url("IMG/cosmetologist-cleaning-face-woman-beauty-salon.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
@@ -128,13 +125,6 @@ footer {
     padding-top: 4px;
     margin-top: 10px; }
 
-.home-main-section4 {
-  text-align: center;
-  color: #CE3262;
-  margin: 20px; }
-  .home-main-section4 h3 {
-    height: 40px; }
-
 .home-main-section5 {
   display: none; }
 
@@ -142,7 +132,7 @@ footer {
 .tratam-main-section {
   height: 270px;
   width: 100%;
-  background-image: url("/IMG/attractive-woman-getting-face-beauty-procedures-in-spa-salon.jpg");
+  background-image: url("IMG/attractive-woman-getting-face-beauty-procedures-in-spa-salon.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -230,12 +220,14 @@ footer {
   margin: 15px 15px;
   padding: 30px; }
   .info-main-section2 .info-main-section2-cards .parrafo {
-    font-size: 15px; }
+    font-size: 15px;
+    margin-top: 10px; }
     .info-main-section2 .info-main-section2-cards .parrafo h4 {
       font-size: 20px;
       height: 30px;
-      margin-top: 15px;
       font-weight: bold; }
+    .info-main-section2 .info-main-section2-cards .parrafo ul li {
+      text-align: center; }
   .info-main-section2 .info-main-section2-cards .img {
     height: 50%;
     width: 100%; }
@@ -247,9 +239,17 @@ footer {
 @media only screen and (min-width: 900px) {
   .navbar .nav-logo {
     height: 112px; }
-  button:hover {
-    background-color: #CE3262;
-    color: #FFD5D8; }
+  footer .footer-div-mapa {
+    display: block;
+    text-align: center;
+    background-color: white; }
+    footer .footer-div-mapa h3 {
+      height: 40px;
+      color: #A5323C;
+      margin-top: 20px; }
+    footer .footer-div-mapa iframe {
+      width: 856px;
+      height: 392px; }
   /* INICIO */
   .home-main-section {
     height: 520px;
@@ -327,7 +327,7 @@ footer {
       font-size: 40px;
       width: 564px;
       height: 170px;
-      padding-top: 60px; }
+      padding-top: 65px; }
   .tratam-main-section2 {
     background-color: white;
     color: #CE3262;
@@ -359,61 +359,80 @@ footer {
     .tratam-main-section3 .tratam-main-section3-div {
       color: white;
       background-color: #F18DA5;
-      width: 900px;
-      height: 350px;
-      text-align: center;
-      padding: 20px;
+      width: 856px;
+      height: 292px;
+      padding: 5px;
       margin: 15px 15px;
       display: flex;
-      justify-content: space-around;
-      align-items: center; }
-      .tratam-main-section3 .tratam-main-section3-div h4 {
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 36px;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      .tratam-main-section3 .tratam-main-section3-div .texto {
+        width: 300px;
         text-align: left; }
-      .tratam-main-section3 .tratam-main-section3-div ul {
-        font-size: 18px;
-        line-height: 20px;
-        text-align: left; }
-        .tratam-main-section3 .tratam-main-section3-div ul li {
-          padding: 2px; }
+        .tratam-main-section3 .tratam-main-section3-div .texto h4 {
+          font-weight: bold;
+          font-size: 23px; }
+        .tratam-main-section3 .tratam-main-section3-div .texto ul {
+          font-size: 16px;
+          line-height: 20px; }
+          .tratam-main-section3 .tratam-main-section3-div .texto ul li {
+            padding: 2px; }
       .tratam-main-section3 .tratam-main-section3-div .imagen {
-        width: 60%;
+        width: 50%;
         height: 100%; }
         .tratam-main-section3 .tratam-main-section3-div .imagen img {
-          width: 100%;
-          height: 100%; }
+          width: 366px;
+          height: 259px;
+          padding-top: 20px;
+          text-align: end; }
   /* INFORMACION */
   .info-main-section {
-    background-color: #FFD5D8; }
+    background-color: #FFD5D8;
+    color: #CE3262;
+    text-align: center;
+    height: 180px;
+    padding: 20px; }
+    .info-main-section h3 {
+      padding: 0px; }
+    .info-main-section h4 {
+      font-size: 18px;
+      height: 50px; }
+    .info-main-section button {
+      background-color: #CE3262;
+      color: white;
+      font-size: 25px;
+      width: 224px;
+      height: 38px; }
   .info-main-section2 {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: stretch; }
     .info-main-section2 .info-main-section2-cards {
       color: white;
       background-color: #F18DA5;
       text-align: center;
-      margin: 15px 2px;
+      margin: 15px 15px;
       padding: 0px;
-      width: 30%; }
-      .info-main-section2 .info-main-section2-cards h4 {
-        font-size: 25px;
-        line-height: 36px;
-        height: 30px;
-        margin-top: 15px;
-        font-weight: bold; }
-      .info-main-section2 .info-main-section2-cards ul {
+      width: 28%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      .info-main-section2 .info-main-section2-cards .parrafo {
         font-size: 14px; }
-      .info-main-section2 .info-main-section2-cards p {
-        font-size: 14px;
-        line-height: 20px;
-        padding: 0px 40px;
-        text-align: left; }
+        .info-main-section2 .info-main-section2-cards .parrafo h4 {
+          font-size: 25px;
+          height: 35px; }
+        .info-main-section2 .info-main-section2-cards .parrafo p {
+          line-height: 20px;
+          padding: 0px 40px;
+          text-align: left; }
+        .info-main-section2 .info-main-section2-cards .parrafo ul {
+          padding: 0px 60px; }
+          .info-main-section2 .info-main-section2-cards .parrafo ul li {
+            text-align: left;
+            text-decoration: dotted; }
       .info-main-section2 .info-main-section2-cards .img {
-        height: 40%;
+        height: 45%;
         width: 100%; }
         .info-main-section2 .info-main-section2-cards .img img {
           height: 100%;
