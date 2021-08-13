@@ -220,32 +220,48 @@ footer{
 }
 
 .tratam-main-section3{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax (360px, 1fr));
 
     .tratam-main-section3-div{
-        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background-color: $colorCards;
-        text-align: center;
+        color: white;
+        transition: transform 0.3s ease-in-out;
         margin: 15px 15px;
-        padding: 30px;
+        padding: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-        h4{
-            font-size: 20px;
-            height: 30px;
-        }
+        .texto{
+            
+            h4{
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+                height: 25px;
+            }
 
-        ul{
-            font-size: 12px;
-        }
-        
-        .imagen{
-            height: 50%;
-            width: 100%;
-
-            img{
-                height: 100%;
-                width: 100%;
+            ul{
+                font-size: 15px;
+                text-align: center;
             }
         }
+
+        .imagen{
+            
+            img{
+                width: 159px;
+                height: 122px;
+            }
+        }
+    }
+
+    .tratam-main-section3-div:hover{
+        filter: opacity (0.9);
+        transform: scale(1.01);
     }
 }
 
@@ -293,38 +309,46 @@ footer{
 .info-main-section2{
 
     .info-main-section2-cards{
-        color: white;
         background-color: $colorCards;
-        text-align: center;
+        color: white;
+        transition: transform 0.3s ease-in-out;
         margin: 15px 15px;
-        padding: 30px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
         .parrafo{
-            font-size: 15px;
-            margin-top: 10px;
+            padding: 20px 20px;
 
             h4{
-                font-size: 20px;
-                height: 30px;
+                font-size: 18px;
                 font-weight: bold;
+                text-align: center;
+                height: 25px;
+            }
+
+            p{
+                font-size: 14px;
+                text-align: center;
             }
 
             ul{
-                li{
-                    text-align: center;
-                }
+                font-size: 14px;
+                text-align: center;
             }
         }
 
         .img{
-            height: 50%;
-            width: 100%;
 
             img{
-                height: 100%;
                 width: 100%;
+                height: 180px;
+                object-fit: cover;
             }
         }
+    }
+
+    .info-main-section2-cards:hover{
+        filter: opacity (0.9);
+        transform: scale(1.01);
     }
 }
 
@@ -416,6 +440,7 @@ footer{
         text-align: center;
         height: 154px;
         padding: 20px;
+        box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.25);
     
         h3{
             font-size: 18px;
@@ -437,7 +462,7 @@ footer{
     .home-main-section5{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         height: 300px;
         margin-top: 50px;
         
@@ -498,55 +523,43 @@ footer{
     }
 
     .tratam-main-section3{
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .tratam-main-section3-div{
-            color: white;
-            background-color: $colorCards;
-            width: 856px;
-            height: 292px;
-            padding: 5px;
-            margin: 15px 15px;
             display: flex;
-            justify-content: center;
+            flex-direction: row;
             align-items: center;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+            justify-content: space-between;
+            width: 856px;
+            height: 320px;
+    
             .texto{
-                width: 300px;
-                text-align: left;
+                margin: 0px 50px;
 
                 h4{
+                    font-size: 25px;
                     font-weight: bold;
-                    font-size: 23px;
+                    text-align: left;
+                    height: 35px;
                 }
-        
-                ul{
-                    font-size: 16px;
-                    line-height: 20px;
     
-                    li{
-                        padding: 2px;
-                    }
+                ul{
+                    font-size: 18px;
+                    text-align: left;
                 }
             }
-
+    
             .imagen{
-                width: 50%;
-                height: 100%;
-
+                
                 img{
                     width: 366px;
                     height: 259px;
-                    padding-top: 20px;
-                    text-align: end;
                 }
             }
         }
     }
+
 
 /* INFORMACION */ 
 
@@ -554,11 +567,12 @@ footer{
         background-color: $colorPrincipal;
         color: $colorSecundario;
         text-align: center;
-        height: 180px;
+        height: 200px;
         padding: 20px;
 
         h3{
             padding: 0px;
+            height: 40px;
         }
 
         h4{
@@ -574,7 +588,7 @@ footer{
             height: 38px;
         }
     }
-    
+
     .info-main-section2{
         display: flex;
         flex-flow: row wrap;
@@ -582,48 +596,35 @@ footer{
         align-items: stretch;
 
         .info-main-section2-cards{
-            color: white;
-            background-color: $colorCards;
-            text-align: center;
             margin: 15px 15px;
             padding: 0px;
             width: 28%;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 
             .parrafo{
-                font-size: 14px;
-
+                
                 h4{
-                    font-size: 25px;
-                    height: 35px;
+                    height: 30px;
+                    font-size: 20px;
+                    text-align: left;
                 }
-        
+
+                .ancho{
+                    height: 50px;
+                }
+
                 p{
-                    line-height: 20px;
-                    padding: 0px 40px;
+                    font-size: 14px;
                     text-align: left;
                 }
 
                 ul{
-                    padding: 0px 60px;
+                    font-size: 14px;
 
                     li{
                         text-align: left;
-                        text-decoration: dotted;
-                    }                    
-                }
-            }
-            
-            .img{
-                height: 45%;
-                width: 100%;
-                img{
-                    height: 100%;
-                    width: 100%;
+                    }
                 }
             }
         }
     }
-
 }
